@@ -20,7 +20,11 @@ class Statistics extends Component {
     const totalFeedbacks = this.countTotalFeedback();
 
     if (totalFeedbacks === 0) {
-      return <Notification message="No feedback given" />;
+        return (
+            <Section title="Statistics" className="statistics">
+                <Notification message="No feedback given" />
+            </Section>
+        )
     } else {
       return (
         <Section title="Statistics" className="statistics">
