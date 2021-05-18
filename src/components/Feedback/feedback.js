@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import FeedbackOptions from '../FeedbackOptions/feedbackOptions.js';
-import Section from './section';
+import Section from '../Section/section.js';
 
 class Feedback extends Component {
   render() {
