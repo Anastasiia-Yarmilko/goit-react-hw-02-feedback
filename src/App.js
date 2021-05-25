@@ -27,12 +27,12 @@ export default class App extends Component {
   };
 
   render() {
+    const { good, neutral, bad } = this.state;
+
     return (
       <div>
         <Feedback
-          state={this.state}
           handleFeedback={this.handleFeedback}
-          name="name"
         />
         <Statistics state={this.state} />
       </div>
