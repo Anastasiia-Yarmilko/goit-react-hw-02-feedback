@@ -2,6 +2,7 @@ import './App.css';
 import { Component } from 'react';
 import Feedback from './components/Feedback/feedback.js';
 import Statistics from './components/Statistics/statistics.js';
+import FeedbackOptions from './components/FeedbackOptions/feedbackOptions.js'
 
 export default class App extends Component {
   state = {
@@ -27,13 +28,16 @@ export default class App extends Component {
   };
 
   render() {
-    const { good, neutral, bad } = this.state;
 
     return (
       <div>
         <Feedback
           handleFeedback={this.handleFeedback}
         />
+
+        <FeedbackOptions
+            options={Object.keys(this.state)}
+            onLeaveFeedback={this.handleFeedback} />
         <Statistics state={this.state} />
       </div>
     );
