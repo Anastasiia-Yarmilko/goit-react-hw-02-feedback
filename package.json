@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -41,5 +42,16 @@
     "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anastasiia-Yarmilko/goit-react-hw-02-feedback.git"
+  },
+  "keywords": [],
+  "author": "Anastasiia Yarmilko <anastasiia.yarm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anastasiia-Yarmilko/goit-react-hw-02-feedback/issues"
+  },
+  "homepage": "https://anastasiia-yarmilko.github.io/goit-react-hw-02-feedback/"
 }
