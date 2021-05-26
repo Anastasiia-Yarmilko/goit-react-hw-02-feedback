@@ -1,8 +1,9 @@
 import './App.css';
 import { Component } from 'react';
-import Feedback from './components/Feedback/feedback.js';
 import Statistics from './components/Statistics/statistics.js';
-import FeedbackOptions from './components/FeedbackOptions/feedbackOptions.js'
+import FeedbackOptions from './components/FeedbackOptions/feedbackOptions.js';
+import Section from './components/Section/section.js';
+
 
 export default class App extends Component {
   state = {
@@ -31,10 +32,7 @@ export default class App extends Component {
 
     return (
       <div>
-        <Feedback
-          handleFeedback={this.handleFeedback}
-        />
-
+        <Section title="Please leave feedback" className="feedback" />
         <FeedbackOptions
             options={Object.keys(this.state)}
             onLeaveFeedback={this.handleFeedback} />
